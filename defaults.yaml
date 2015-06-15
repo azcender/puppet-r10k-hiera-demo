@@ -1,0 +1,18 @@
+---
+jenkins::configure_firewall: true
+
+jenkins::plugin_hash:
+  analysis-core:          {}
+  artifactory:            {}
+  cobertura:              {}
+  credentials:            {}
+  dashboard-view:         {}
+  findbugs:               {}
+  git:                    {}
+  git-client:             {}
+  mapdb-api:              {}
+  promoted-builds:        {}
+  scm-api:                {}
+  scm-sync-configuration: {}
+  ssh-credentials:        {}
+  token-macro:            {}

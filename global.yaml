@@ -1,0 +1,4 @@
+---
+# Settings that can be dynamically set from the puppet console
+profile::puppet_agent_environment: "%{::puppet_environment}"
+profile::puppet_agent_runinterval: "%{::runinterval}"

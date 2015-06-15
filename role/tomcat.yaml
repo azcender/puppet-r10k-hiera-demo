@@ -1,0 +1,18 @@
+---
+classes:
+  - role::tomcat
+
+# Maven repository where dev SNAPSHOTs are held
+profile::tomcat::snapshot_repo:
+  'http://artifactory.azcender.com/artifactory/libs-snapshot'
+profile::tomcat::release_repo:
+  'http://artifactory.azcender.com/artifactory/libs-release'
+profile::tomcat::production_repo:
+  'http://artifactory.azcender.com/artifactory/libs-release'
+
+# Catalina home for the Forest Service
+profile::tomcat::catalina_home: '/opt/tomcat'
+
+# The tomcat source
+profile::tomcat::source_url:
+  'http://file.azcender.com/apache-tomcat-7.0.57.tar.gz'

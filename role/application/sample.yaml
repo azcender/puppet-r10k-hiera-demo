@@ -1,0 +1,14 @@
+---
+# Application instances
+# Old username system
+profile::tomcat::artifactid: 'MJDemo'
+profile::tomcat::version:    '0.0.1-SNAPSHOT'
+
+tomcat_resources:
+  myoracle:
+    url:           'jdbc:oracle:thin:@10.0.2.2:49161:XE'
+    username:      '${myoracle.username}'
+    password:      '${myoracle.password}'
+    resource_name: 'jdbc/myoracle'
+
+
